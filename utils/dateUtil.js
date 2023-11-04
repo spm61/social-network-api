@@ -1,5 +1,5 @@
 //this file defines functions that affect dates.  This is because dates require particular formats for our database.
-const addDateSuffix = (date) => {
+const formatDate = (date) => {
     let dateString = date.toString();
   
     // get last character of date string
@@ -63,7 +63,7 @@ const addDateSuffix = (date) => {
     let dayOfMonth;
   
     if (dateSuffix) {
-      dayOfMonth = addDateSuffix(date.getDate());
+      dayOfMonth = formatDate(date.getDate());
     } else {
       dayOfMonth = date.getDate();
     }
