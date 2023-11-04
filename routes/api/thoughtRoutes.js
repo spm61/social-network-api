@@ -21,7 +21,7 @@ router
   .delete(deleteThought);
 
 //These routes givern the adding and removing of reactions.
-router.route("/:thoughtId/reactions/:reactionId").delete(deleteReaction);
+router.route("/:thoughtId/reactions/:reactId").delete(deleteReaction);
 router.route("/:thoughtId/reactions").post(addReaction);
 
 module.exports = router;
