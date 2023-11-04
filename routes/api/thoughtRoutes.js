@@ -8,7 +8,7 @@ const {
   deleteThought,
   addReaction,
   deleteReaction,
-} = require("../../controller/thoughtController"); //import all the thought functions.  Is there a better way to do this?
+} = require("../../controllers/thoughtController"); //import all the thought functions.  Is there a better way to do this?
 
 //The route that triggers the getAllThoughts function.
 router.route("/").get(getAllThoughts).post(createThought);

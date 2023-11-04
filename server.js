@@ -1,6 +1,6 @@
 const express = require('express');
-const db = require('./config/connection'); //to be defined
-const routes = require('./routes') //to be defined
+const db = require('./config/connection');
+const routes = require('./routes') 
 
 const PORT = 3001; //since we're not deploying to heroku, we're just using a port number.
 const app = express();

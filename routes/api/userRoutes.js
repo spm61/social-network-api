@@ -8,7 +8,7 @@ const {
   deleteUser,
   addFriend,
   removeFriend,
-} = require("../../controller/userController"); //import all the user control functions.  Could this be done more concisely?
+} = require("../../controllers/userController"); //import all the user control functions.  Could this be done more concisely?
 
 //Find all the users.
 router.route("/").get(getAllUsers).post(createUser);
